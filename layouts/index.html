@@ -30,24 +30,50 @@
           <img class="avatar" src="{{ "images/avatar.jpg" | relURL }}" alt="Yan Wang">
           <h1>王岩</h1>
           <p class="name-subtitle">Yan Wang</p>
-          <p class="role">Research Engineer<br>Beijing Institute for General Artificial Intelligence</p>
+          <p class="role">
+            <span class="role-title">Research Engineer</span>
+            <span class="role-organization">Beijing Institute for General Artificial Intelligence</span>
+          </p>
           <div class="contact-links" aria-label="Profile links">
-            <a href="mailto:jetpackfirstme@gmail.com">Email</a>
-            <a href="https://github.com/jetpackfirstme">GitHub</a>
-            <a href="https://scholar.google.com/citations?user=WkYlnkkAAAAJ&amp;hl=en">Scholar</a>
-            <a href="{{ "uploads/resume.pdf" | relURL }}">CV</a>
+            <a class="icon-link" href="mailto:jetpackfirstme@gmail.com" aria-label="Email" title="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16v12H4z"></path>
+                <path d="m4 7 8 6 8-6"></path>
+              </svg>
+            </a>
+            <a class="icon-link" href="https://github.com/YanWang-AI" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2.2a9.8 9.8 0 0 0-3.1 19.1c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.8.1-.7.4-1.1.7-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1.1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1a9.8 9.8 0 0 1 5.1 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.7.7 1.1 1.6 1.1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.6c0 .3.2.6.7.5A9.8 9.8 0 0 0 12 2.2Z"></path>
+              </svg>
+            </a>
+            <a class="icon-link" href="https://scholar.google.com/citations?user=WkYlnkkAAAAJ&amp;hl=en" aria-label="Google Scholar" title="Google Scholar">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 10.5 12 6l9 4.5-9 4.5-9-4.5Z"></path>
+                <path d="M7 13v3.2c0 1.1 2.2 2 5 2s5-.9 5-2V13"></path>
+                <path d="M21 10.5v5"></path>
+              </svg>
+            </a>
+            <a class="icon-link" href="{{ "uploads/resume.pdf" | relURL }}" aria-label="CV" title="CV">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path>
+                <path d="M14 3v5h5"></path>
+                <path d="M9 13h6"></path>
+                <path d="M9 17h4"></path>
+              </svg>
+            </a>
           </div>
         </aside>
 
         <article class="about-copy">
           <h2>About Me</h2>
           <p>
-            I am a Research Engineer at the Beijing Institute for General Artificial Intelligence (BIGAI).
+            I am a <strong>Research Engineer</strong> at
+            <a href="https://www.bigai.ai/">Beijing Institute for General Artificial Intelligence (BIGAI)</a>.
             My work sits broadly at the intersection of computer vision, 3D perception, and embodied AI.
           </p>
           <p>
             I received my M.S. in Computer Science and Technology and B.S. in Software Engineering from
-            Beijing Institute of Technology.
+            <a href="https://english.bit.edu.cn/">Beijing Institute of Technology</a>.
           </p>
           <div class="focus-list" aria-label="Research focus">
             <span>Computer Vision</span>
@@ -59,9 +85,8 @@
       </section>
 
       <section class="section-block">
-        <div class="section-heading">
+        <div class="section-heading section-heading-quiet">
           <h2>More</h2>
-          <p>A shorter homepage, with details split into separate pages.</p>
         </div>
 
         <div class="link-grid">
