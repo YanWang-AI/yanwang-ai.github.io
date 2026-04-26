@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yan Wang | 王岩</title>
+    <meta name="description" content="Yan Wang is a research engineer working on computer vision, 3D perception, and embodied AI.">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="preload" as="image" href="{{ "images/avatar.jpg" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/home.css" | relURL }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="{{ "/" | relURL }}" aria-label="Yan Wang home">Yan Wang</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="{{ "/" | relURL }}">About</a>
+          <a href="{{ "experience/" | relURL }}">Experience</a>
+          <a href="{{ "publications/" | relURL }}">Publications</a>
+          <a href="{{ "uploads/resume.pdf" | relURL }}">CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="shell">
+      <section class="intro-grid">
+        <aside class="profile">
+          <img class="avatar" src="{{ "images/avatar.jpg" | relURL }}" alt="Yan Wang">
+          <h1>王岩</h1>
+          <p class="name-subtitle">Yan Wang</p>
+          <p class="role">Research Engineer<br>Beijing Institute for General Artificial Intelligence</p>
+          <div class="contact-links" aria-label="Profile links">
+            <a href="mailto:jetpackfirstme@gmail.com">Email</a>
+            <a href="https://github.com/jetpackfirstme">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=WkYlnkkAAAAJ&amp;hl=en">Scholar</a>
+            <a href="{{ "uploads/resume.pdf" | relURL }}">CV</a>
+          </div>
+        </aside>
+
+        <article class="about-copy">
+          <h2>About Me</h2>
+          <p>
+            I am a Research Engineer at the Beijing Institute for General Artificial Intelligence (BIGAI).
+            My work sits broadly at the intersection of computer vision, 3D perception, and embodied AI.
+          </p>
+          <p>
+            I received my M.S. in Computer Science and Technology and B.S. in Software Engineering from
+            Beijing Institute of Technology.
+          </p>
+          <div class="focus-list" aria-label="Research focus">
+            <span>Computer Vision</span>
+            <span>3D Perception</span>
+            <span>Embodied AI</span>
+            <span>Learning Systems</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <h2>More</h2>
+          <p>A shorter homepage, with details split into separate pages.</p>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="{{ "experience/" | relURL }}">
+            <span>Experience</span>
+            <p>Positions, education, awards, and skills in a concise format.</p>
+          </a>
+          <a class="link-card" href="{{ "publications/" | relURL }}">
+            <span>Publications</span>
+            <p>A selected list of published and listed academic work.</p>
+          </a>
+          <a class="link-card" href="{{ "uploads/resume.pdf" | relURL }}">
+            <span>CV</span>
+            <p>The latest PDF résumé.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell">
+        <p>© {{ now.Format "2006" }} Yan Wang.</p>
+      </div>
+    </footer>
+  </body>
+</html>

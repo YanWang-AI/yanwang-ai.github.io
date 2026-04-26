@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }} | Yan Wang</title>
+    {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="stylesheet" href="{{ "css/home.css" | relURL }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="{{ "/" | relURL }}" aria-label="Yan Wang home">Yan Wang</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="{{ "/" | relURL }}">About</a>
+          <a href="{{ "experience/" | relURL }}">Experience</a>
+          <a href="{{ "publications/" | relURL }}">Publications</a>
+          <a href="{{ "uploads/resume.pdf" | relURL }}">CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="shell page-shell">
+      <header class="page-title">
+        <p class="eyebrow">Yan Wang</p>
+        <h1>{{ .Title }}</h1>
+      </header>
+      <article class="page-content">
+        {{ .Content }}
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell">
+        <p>© {{ now.Format "2006" }} Yan Wang.</p>
+      </div>
+    </footer>
+  </body>
+</html>
